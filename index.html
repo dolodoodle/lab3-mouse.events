@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Mouse Events</title>
-    <script src="j/main.js" defer></script>
+    <script src="java/main.js" defer></script>
 </head>
 <body>
     <div id="dot" class="ball"></div>
@@ -15,7 +15,12 @@
 
 
     <script defer>
-        
+        var dot = document.getElementById('dot');
+        document.body.addEventListener('click', (e) => {
+            dot.style.transform = `translateY(${e.clientY - 25}px)`;
+            dot.style.transform += `translateX(${e.clientX - 25}px)`;
+            dot.style.opacity = 1;
+        }, false);
     </script>
 
 </body>
