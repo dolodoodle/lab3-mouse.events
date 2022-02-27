@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Mouse Events</title>
     <script src="java/main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 
@@ -16,7 +17,7 @@
         <h1> Play Around!</h1>
     </header>
 
-    <div id="dot" class="ball"></div>
+    <div id="circularcursor"></div>
 
     <main>
     <section class= "basket">
@@ -45,14 +46,7 @@
     
 
 
-    <script defer>
-        var dot = document.getElementById('dot');
-        document.body.addEventListener('click', (e) => {
-            dot.style.transform = `translateY(${e.clientY - 25}px)`;
-            dot.style.transform += `translateX(${e.clientX - 25}px)`;
-            dot.style.opacity = 1;
-        }, false);
-    </script>
+
 
     </main>
 

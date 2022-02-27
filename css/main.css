@@ -54,14 +54,24 @@ img {
     display: block;
 }
 
-.ball {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background: orange;
-    opacity: 0;
-    transition: transform 1s;
-}
+html {
+    cursor: none;
+  }
+
+#circularcursor {
+    /*
+    background-color: transparent;
+    border:1px solid black;  
+    */  
+    background-color: rgb(245, 215, 45);
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    position: absolute;
+    z-index: 1;
+  }
 
 
 p {
@@ -69,6 +79,7 @@ p {
     text-align: center;
     font: bold;
 }
+
 
 /*
 .trapezoid {
