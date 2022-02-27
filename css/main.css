@@ -21,7 +21,8 @@ html, body {
     height: 300px;
     margin: auto;
     padding: auto;
-    background: hsla(90, 50%, 50%, .5)
+    /*background: hsla(90, 50%, 50%, .5)*/
+    background-image: url(/images/daisy.cropped.300x300.png);
 }
 
 .ball {
