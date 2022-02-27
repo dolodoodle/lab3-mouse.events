@@ -8,7 +8,7 @@ $(document).ready(function() {
   });
 
 //create shortcut constants
-const demo  = document.querySelector('.demo');
+const demo  = document.querySelector('.daisy');
 const point = document.querySelector('#point');
 
 //detect mousedown events and handle them.
